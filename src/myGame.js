@@ -14,7 +14,7 @@ export default function MyGames() {
     useEffect(() => {
         setLoading(true);
         
-     //   fetch("http://localhost:3333/result").then(res => res.json()).then(games => {
+ //      fetch("http://localhost:5000/result").then(res => res.json()).then(games => {
         fetch("https://yinodes.herokuapp.com/result").then(res => res.json()).then(games => {
             setLoading(false);
             setProducts(games);

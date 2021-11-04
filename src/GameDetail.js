@@ -30,7 +30,7 @@ export default function GameDetail(params) {
             console.log('this is id' + id)
         }
 
-       // fetch("http://localhost:3333/detail/" + id).then(res => res.json()).then(gameDetail => {
+     //  fetch("http://localhost:5000/detail/" + id).then(res => res.json()).then(gameDetail => {
 
         fetch("https://yinodes.herokuapp.com/detail/" + id).then(res => res.json()).then(gameDetail => {    
             if(Object.keys(gameDetail).length !== 0 ){
